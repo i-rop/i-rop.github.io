@@ -24,7 +24,7 @@
     var btn = $('<button type="submit" class="btn"><i class="icon-search"></i></button>');
     
     var inp_div = $('<div class="input-append span12">');
-    inp_div.append(inp).append(btn);
+    inp_div.append([inp, btn]);
     
     var form = $('<form id="custom-search-form" class="form-search form-horizontal pull-right">');
     form.append(inp_div);
