@@ -6,6 +6,6 @@
     // To use an html string, use innerHTML field. For trade offs, see
     // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
     //
-    titleElem.textContent = "i-ROP Imaging and Informatics of Retinopathy of Prematurity";
+    titleElem.textContent = "i-ROP Imaging and Informatics in Retinopathy of Prematurity";
     
 })();
