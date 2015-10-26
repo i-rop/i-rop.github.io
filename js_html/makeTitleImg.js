@@ -9,7 +9,7 @@
 
 (function() {
 
-    var addr_bar = $('<div class="address-bar"><small>Imaging and Informatics of Retinopathy of Prematurity</small></div>');
+    var addr_bar = $('<div class="address-bar"><small>Imaging and Informatics in Retinopathy of Prematurity</small></div>');
 
     var img_div = $('<div class= "image2"><img src="images/logo3.png" alt="" height= "100" width= "150" /> </div>');
     img_div.append(addr_bar);
