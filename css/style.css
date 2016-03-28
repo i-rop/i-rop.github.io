@@ -115,7 +115,7 @@ hr {
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
- 
+
 }
 
 .box2 {
@@ -127,7 +127,7 @@ hr {
     border: none !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
-    box-shadow: none !important; 
+    box-shadow: none !important;
 }
 
 .intro-text {
@@ -149,7 +149,7 @@ hr {
 }
 
 .col-sm-6 > .col1 {
-    
+
 }
 
 .col1 h3 {
@@ -159,7 +159,7 @@ hr {
     text-transform: none;
 	line-height: 1em;
 	padding: 20px;
-    
+
 }
 
 .col2 h3 {
@@ -204,7 +204,7 @@ hr {
     color: #000;
     position: absolute;
     bottom: -10px;
-    left: -15px; 
+    left: -15px;
     width: 100%;
 }
 
@@ -214,14 +214,14 @@ hr {
         margin-top: 5px;
         padding: 0;
     }
- 
+
     #custom-search-form .search-query {
         padding-right: 3px;
         padding-right: 4px \9;
         padding-left: 3px;
         padding-left: 4px \9;
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
- 
+
         margin-bottom: 0;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -231,7 +231,7 @@ hr {
         -o-transition: width  0.2s ease-in-out;
         transition: width  0.2s ease-in-out;
     }
- 
+
     #custom-search-form button {
         border: 0;
         background: none;
@@ -246,14 +246,14 @@ hr {
         -moz-border-radius: 3px;
         border-radius: 3px;
     }
- 
+
     .search-query:focus + button {
-        z-index: 3;   
-    }   
+        z-index: 3;
+    }
     .search-query:focus{
         width: 260px;
-    }   
-  
+    }
+
 @media screen and (min-width:768px) {
     .navbar {
         border-radius: 0;
@@ -265,7 +265,7 @@ hr {
 
     .nav>li>a {
         padding: 20px;
-        
+
     }
 
     .navbar-nav>li>a {
@@ -276,7 +276,7 @@ hr {
         display: inherit;
         float: none;
         margin: 0 auto;
-        table-layout: fixed; 
+        table-layout: fixed;
         font-size: 1em;
     }
 }
@@ -296,11 +296,11 @@ hr {
     left: 15px;
     position: relative;
     width: 100%;
-}  
+}
    .address-bar {
     position: relative;
     bottom: 0px;
-}       
+}
   .navbar .navbar-nav .open .dropdown-menu > li > a {
     color: #000000;
   }
@@ -311,10 +311,10 @@ hr {
     color: #36728b;
     background-color: #f1f1f1;
   }
-    
+
   .col-sm-6 > .col1 {
     margin-top: -100px;
-    padding: 0px;  
+    padding: 0px;
     border-left: none;
   }
 
@@ -328,9 +328,8 @@ hr {
     padding: 5px;
   }
   .col2 h3 {
-    border-left: none;  
+    border-left: none;
 	text-align: center;
     padding: 5px;
   }
 }
-
