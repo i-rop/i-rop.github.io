@@ -33,16 +33,16 @@
 //       </div><!-- /.navbar-collapse -->
 //   </div><!-- /.container-fluid -->
 //   </nav>
-    
+
 (function() {
 
     var links = [
-        $('<li class><a href="home.html">Home</a></li>'),        
-        $('<li class><a href="people.html">People</a></li>'),        
+        $('<li class><a href="index.html">Home</a></li>'),        
+        $('<li class><a href="people.html">People</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
         $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a></li>'),
     ];
-    
+
     var menuitems = [
         $('<li><a href="#">Action</a></li>'),
         $('<li><a href="#">Another action</a></li>'),
@@ -50,25 +50,20 @@
         $('<li role="separator" class="divider"></li>'),
         $('<li><a href="#">Separated link</a></li>'),
     ];
-        
+
     var menu = $('<ul class="dropdown-menu">');
     menu.append(menuitems);
-    
+
     links[links.length-1].append(menu);
-    
+
     var list = $('<ul class="nav navbar-nav navbar-right"></ul>');
     links.forEach(function(link) {
         list.append(link);
     });
-    
+
     var container = $('<div class="container-fluid">');
     container.append(list);
-    
+
     $('#top-navbar').append(container);
 
-})();  
-
-
-
-  
-    
+})();
