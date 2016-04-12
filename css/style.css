@@ -333,9 +333,15 @@ hr {
     padding: 5px;
   }
 }
-.people p {
+.people {
   font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
   background: none;
   text-transform: none;
   font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+    vertical-align: bottom;
 }
