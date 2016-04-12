@@ -4,9 +4,9 @@
  */
 
 body {
-    font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
-    background: none;
-    text-transform: none;
+  font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
+  background: none;
+  text-transform: none;
 }
 
 h1,
@@ -332,4 +332,10 @@ hr {
 	text-align: center;
     padding: 5px;
   }
+}
+.people p {
+  font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
+  background: none;
+  text-transform: none;
+  font-size: 14px;
 }
