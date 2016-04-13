@@ -4,9 +4,9 @@
  */
 
 body {
-    font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
-    background: none;
-    text-transform: none;
+  font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
+  background: none;
+  text-transform: none;
 }
 
 h1,
@@ -77,13 +77,21 @@ hr {
 .img-full {
     min-width: 100%;
 }
-
+.img-thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+  align-items: center;
+}
 .brand-before,
 .brand-name {
     text-transform: capitalize;
 }
 
-
+.mailToPic {
+  max-width: 14px;
+  max-height: 14px;
+  margin-left: 5px;
+}
 .brand-name {
     margin: 0;
     font-size: 4em;
@@ -332,4 +340,21 @@ hr {
 	text-align: center;
     padding: 5px;
   }
+}
+.people {
+  font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
+  background: none;
+  text-transform: none;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+  /*border: none;*/
+  vertical-align: middle;
+  text-align: center;
+}
+td {
+  width: 33%;
+  border-bottom: 1px solid #ddd;
 }
