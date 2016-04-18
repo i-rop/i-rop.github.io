@@ -358,3 +358,6 @@ td {
   width: 33%;
   border-bottom: 1px solid #ddd;
 }
+.center {
+  text-align: center;
+}
