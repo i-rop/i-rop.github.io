@@ -37,18 +37,18 @@
 (function() {
 
     var links = [
-        $('<li class><a href="index.html">Home</a></li>'),        
+        $('<li class><a href="index.html">Home</a></li>'),
         $('<li class><a href="people.html">People</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
-        $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a></li>'),
+        $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<span class="caret"></span></a></li>'),
     ];
 
     var menuitems = [
-        $('<li><a href="#">Action</a></li>'),
-        $('<li><a href="#">Another action</a></li>'),
-        $('<li><a href="#">Something else here</a></li>'),
-        $('<li role="separator" class="divider"></li>'),
-        $('<li><a href="#">Separated link</a></li>'),
+        $('<li><a href="clinicians.html">For Researchers</a></li>'),
+        $('<li><a href="forResearcher.html">For Clinicians</a></li>'),
+        // $('<li><a href="#">Something else here</a></li>'),
+        // $('<li role="separator" class="divider"></li>'),
+        // $('<li><a href="#">Separated link</a></li>'),
     ];
 
     var menu = $('<ul class="dropdown-menu">');
