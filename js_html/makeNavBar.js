@@ -44,8 +44,8 @@
     ];
 
     var menuitems = [
-        $('<li><a href="clinicians.html">For Researchers</a></li>'),
-        $('<li><a href="forResearcher.html">For Clinicians</a></li>'),
+        $('<li><a href="forResearcher.html">For Researchers</a></li>'),
+        $('<li><a href="clinicians.html">For Clinicians</a></li>'),
         // $('<li><a href="#">Something else here</a></li>'),
         // $('<li role="separator" class="divider"></li>'),
         // $('<li><a href="#">Separated link</a></li>'),
