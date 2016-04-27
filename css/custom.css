@@ -1,13 +1,13 @@
-.navbar {   
-  background-color: #92c6db;
+.navbar {
+  background-color: #31859C;
   border-color: #f1f1f1;
-  background: #92c6db;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #589ab5), color-stop(100%, #92c6db));
-  background: -webkit-linear-gradient(top, #92c6db,#589ab5);
-  background: -moz-linear-gradient(top, #92c6db,#589ab5);
-  background: -o-linear-gradient(top, #92c6db,#589ab5);
-  background: -ms-linear-gradient(top, ##92c6db,#589ab5);
-  background: linear-gradient(top, #92c6db,#589ab5);
+  background: #31859C;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3ea6c2), color-stop(100%, #31859C));
+  background: -webkit-linear-gradient(top, #31859C,#3ea6c2);
+  background: -moz-linear-gradient(top, #31859C,#3ea6c2);
+  background: -o-linear-gradient(top, #31859C,#3ea6c2);
+  background: -ms-linear-gradient(top, #31859C,#3ea6c2);
+  background: linear-gradient(top, #31859C,#3ea6c2);
 }
 .navbar .navbar-brand {
   color: #000000;
@@ -22,7 +22,7 @@
 }
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
   color: #000;
-  background-color: #36728b;
+  background-color: #51afc8;
 }
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
   color: #36728b;
@@ -62,6 +62,3 @@
 
 /*! http://work.smarchal.com/twbscolor/css/92c6db36728bf1f1f10000000
 */
-
-
-    
