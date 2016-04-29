@@ -19,7 +19,9 @@ h6 {
     font-family: 'Roboto', 'Roboto Condensed', 'Lato', sans-serif;
     letter-spacing: 1px;
 }
-
+a {
+  color: #3ea6c2;
+}
 .image {
     position: relative;
     width: 100%;
