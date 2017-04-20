@@ -46,7 +46,7 @@
     var menuitems = [
         $('<li><a href="forResearcher.html">Researchers: Resources</a></li>'),
         $('<li><a href="cliniciansExamples.html">Clinicians: Examples</a></li>'),
-        $('<li><a href="cliniciansSeverityScale.html">Clinicians: Severity Scale</a></li>'),
+        $('<li><a href="cliniciansSeverityScale.html">Clinicians: Severity Scale & App</a></li>'),
         // $('<li role="separator" class="divider"></li>'),
         // $('<li><a href="#">Separated link</a></li>'),
     ];
