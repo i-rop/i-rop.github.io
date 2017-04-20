@@ -370,3 +370,22 @@ td {
 .researchExample  {
   max-width: 400px;
 }
+.app-links {
+  text-align:center;
+  margin:0 auto;
+}
+.app-links .app-dl {
+  background-size: 200px;
+  display:inline-block;
+  margin:0 10px;
+  outline:0;
+  height:59px;
+  width:200px;
+}
+
+.app-links .android {
+  background-image: url("../images/google-play-get.png");
+}
+.app-links .apple {
+  background-image: url("../images/apple-store-get.png");
+}
