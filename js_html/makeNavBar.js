@@ -18,7 +18,7 @@
 //         <ul class="nav navbar-nav navbar-right">
 //            <li class><a href="http://127.0.0.1:65230/main.html">Home</a></li>
 //            <li class><a href="http://127.0.0.1:65230/people.html">People </a></li>
-              <li class><a href="http://127.0.0.1:65230/people.html">Funding </a></li>
+            
 //            <li class><a href="http://127.0.0.1:65230/publications.html">Publications</a></li>
 //            <li class="dropdown">
 //            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
@@ -40,7 +40,7 @@
     var links = [
         $('<li class><a href="index.html">Home</a></li>'),
         $('<li class><a href="people.html">People</a></li>'),
-        $('<li class><a href="people.html">Funding</a></li>'), 
+        
         $('<li class><a href="publications.html">Publications</a></li>'),
         $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a></li>'),
     ];
