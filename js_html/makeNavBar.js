@@ -19,7 +19,7 @@
 //         <ul class="nav navbar-nav navbar-right">
 //            <li class><a href="http://127.0.0.1:65230/main.html">Home</a></li>
 //            <li class><a href="http://127.0.0.1:65230/people.html">People </a></li>
-              <li class><a href="http://127.0.0.1:65230/funding.html">DeepROP </a></li>
+             
 //            <li class><a href="http://127.0.0.1:65230/funding.html">Funding </a></li>            
 //            <li class><a href="http://127.0.0.1:65230/publications.html">Publications</a></li>
               
@@ -43,7 +43,7 @@
     var links = [
         $('<li class><a href="index.html">Home</a></li>'),
         $('<li class><a href="people.html">People</a></li>'),
-        $('<li class><a href="DeepROP.html">DeepROP</a></li>'),
+        
          $('<li class><a href="funding.html">Funding</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
         
