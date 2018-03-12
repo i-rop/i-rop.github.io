@@ -20,6 +20,7 @@
 //            <li class><a href="http://127.0.0.1:65230/people.html">People </a></li>
 //            <li class><a href="http://127.0.0.1:65230/funding.html">Funding </a></li>            
 //            <li class><a href="http://127.0.0.1:65230/publications.html">Publications</a></li>
+              <li class><a href="http://127.0.0.1:65230/DeepROP.html">DeepROP</a></li>
 //            <li class="dropdown">
 //            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
 //             <ul class="dropdown-menu">
@@ -42,6 +43,7 @@
         $('<li class><a href="people.html">People</a></li>'),
          $('<li class><a href="funding.html">Funding</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
+        $('<li class><a href="DeepROP.html">DeepROP</a<>/li>'),
         $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a></li>'),
     ];
 
