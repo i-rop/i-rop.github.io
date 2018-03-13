@@ -43,7 +43,7 @@
     var links = [
         $('<li class><a href="index.html">Home</a></li>'),
         $('<li class><a href="people.html">People</a></li>'),
-        $('<li class><a href="http://deeprop.eastus.cloudapp.azure.com:5000/">DeepROP</a></li>'),
+        $('<li class><a href="http://deeprop.eastus.cloudapp.azure.com:5000/">DeepROP (i-ROP DL)</a></li>'),
          $('<li class><a href="funding.html">Funding</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
         
@@ -53,7 +53,8 @@
     var menuitems = [
         $('<li><a href="forResearcher.html">Researchers: Resources</a></li>'),
         $('<li><a href="cliniciansExamples.html">Clinicians: Examples</a></li>'),
-        $('<li><a href="cliniciansSeverityScale.html">Clinicians: Severity Scale & App</a></li>'),
+        $('<li><a href="cliniciansSeverityScale.html">Clinicians: i-ROP Assist Scale</a></li>'),
+        $('<li><a href="http://deeprop.eastus.cloudapp.azure.com:5000/">Clinicians: i-ROP DL</a></li>'),
         // $('<li role="separator" class="divider"></li>'),
         // $('<li><a href="#">Separated link</a></li>'),
     ];
