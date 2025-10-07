@@ -43,11 +43,12 @@
     var links = [
         $('<li class><a href="index.html">Home</a></li>'),
         $('<li class><a href="people.html">People</a></li>'),
-        $('<li class><a href="http://deeprop.eastus.cloudapp.azure.com:5000/">DeepROP (i-ROP DL)</a></li>'),
-         $('<li class><a href="funding.html">Funding</a></li>'),
+        $('<li class><a href="https://i-rop.shinyapps.io/weekly-risk-calculator/">ROP Risk Calculator</a></li>'),  
+        // $('<li class><a href="http://deeprop.eastus.cloudapp.azure.com:5000/">DeepROP (i-ROP DL)</a></li>'),
+        $('<li class><a href="funding.html">Funding</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
         
-        $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a></li>'),
+        // $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a></li>'),
     ];
 
     var menuitems = [
@@ -75,3 +76,4 @@
     $('#top-navbar').append(container);
 
 })();
+
