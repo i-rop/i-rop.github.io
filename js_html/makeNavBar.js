@@ -43,7 +43,7 @@
     var links = [
         $('<li class><a href="index.html">Home</a></li>'),
         $('<li class><a href="people.html">People</a></li>'),
-        $('<li class><a href="https://i-rop.shinyapps.io/weekly-risk-calculator/">ROP Risk Calculator</a></li>'),  
+        $('<li class><a href="https://i-rop.shinyapps.io/weekly-risk-calculator/" target="_blank">ROP Risk Calculator</a></li>'),  
         // $('<li class><a href="http://deeprop.eastus.cloudapp.azure.com:5000/">DeepROP (i-ROP DL)</a></li>'),
         $('<li class><a href="funding.html">Funding</a></li>'),
         $('<li class><a href="publications.html">Publications</a></li>'),
@@ -76,4 +76,5 @@
     $('#top-navbar').append(container);
 
 })();
+
 
