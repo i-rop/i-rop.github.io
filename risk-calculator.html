@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Estimates the 2-week risk of treatment-requiring ROP (TR-ROP) from gestational age, postmenstrual age and P-score.">
+
+    <title>i-ROP - Risk Calculator</title>
+
+    <!-- jquery before bootstrap -->
+    <script src="js/jquery-1.12.2.js"></script>
+
+    <!-- load css common to site pages -->
+    <script src="js_html/loadCss.js"></script>
+
+    <!-- css for this page; after loadCss.js so it wins ties with the common css -->
+    <link href="css/risk-calculator.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500|Arimo:400,700|Roboto:400,500' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+
+    <div id="search-bar" class="wrapper">
+
+    <div id="titleImg" class="container"></div>
+    <script src="js_html/makeTitleImg.js"></script>
+
+    <!-- Navigation -->
+    <nav id="top-navbar" class="navbar"></nav>
+    <script src="js_html/makeNavBar.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <div class="col-lg-12">
+            <div class="row2">
+              <div class="box2 center">
+                <h1>2-Week TR-ROP Risk Calculator</h1>
+                <div class="rc-info">
+                  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#rc-modal-when" aria-haspopup="dialog">When to Use <span aria-hidden="true">&#9662;</span></button>
+                  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#rc-modal-considerations" aria-haspopup="dialog">Considerations <span aria-hidden="true">&#9662;</span></button>
+                  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#rc-modal-why" aria-haspopup="dialog">Why Use <span aria-hidden="true">&#9662;</span></button>
+                </div>
+              </div>
+            </div>
+
+            <noscript><p class="text-danger">This calculator needs JavaScript to run.</p></noscript>
+
+            <div class="row">
+              <!-- Inputs -->
+              <div class="col-sm-5">
+                <form id="rc-form" class="panel panel-default rc-panel" autocomplete="off" novalidate>
+                  <div class="panel-heading text-center">Patient Inputs</div>
+                  <div class="panel-body">
+
+                    <fieldset>
+                      <legend class="rc-group-title">Gestational Age</legend>
+                      <div class="row">
+                        <div class="col-xs-6 form-group">
+                          <label for="rc-ga-weeks">Weeks</label>
+                          <input type="number" class="form-control" id="rc-ga-weeks" value="30" step="1" inputmode="numeric">
+                        </div>
+                        <div class="col-xs-6 form-group">
+                          <label for="rc-ga-days">Days</label>
+                          <input type="number" class="form-control" id="rc-ga-days" value="0" step="1" inputmode="numeric">
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset>
+                      <legend class="rc-group-title">Postmenstrual Age</legend>
+                      <div class="row">
+                        <div class="col-xs-6 form-group">
+                          <label for="rc-pma-weeks">Weeks</label>
+                          <input type="number" class="form-control" id="rc-pma-weeks" value="34" step="1" inputmode="numeric">
+                        </div>
+                        <div class="col-xs-6 form-group">
+                          <label for="rc-pma-days">Days</label>
+                          <input type="number" class="form-control" id="rc-pma-days" value="0" step="1" inputmode="numeric">
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                      <label for="rc-pscore" class="rc-group-title">P-Score</label>
+                      <input type="number" class="form-control" id="rc-pscore" value="1" step="1" inputmode="numeric">
+                    </div>
+
+                    <div id="rc-problems" class="alert alert-danger" role="alert" hidden></div>
+
+                    <button type="submit" class="btn btn-lg btn-block rc-btn">Calculate</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Result -->
+              <div class="col-sm-7">
+                <div class="panel panel-default rc-panel" aria-live="polite" aria-atomic="true">
+                  <div class="panel-body text-center">
+                    <p id="rc-placeholder" class="text-muted">Enter the patient's values and press <strong>Calculate</strong>.</p>
+                    <div id="rc-result" hidden>
+                      <div id="rc-badge" class="rc-badge"></div>
+                      <div class="panel panel-default rc-params">
+                        <div class="panel-heading">Input Parameters</div>
+                        <div class="panel-body"><pre id="rc-params"></pre></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- Acknowledgement: shown on every load, closes only with the button -->
+    <div class="modal fade rc-modal" id="rc-ack-modal" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="rc-ack-title" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="rc-ack-title">Acknowledgement</h4>
+          </div>
+          <div class="modal-body">
+            <p>This tool estimates the 2-week risk of treatment-requiring ROP from gestational age, postmenstrual age, and P-score (a measure of vascular severity).
+            It should be used to assist in determining whether a 1-week vs 2-week follow-up exam is necessary.
+            Its aim is to support, not replace, clinical judgment and is for investigational use only.
+            It has only been validated for use on US populations.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn rc-btn" data-dismiss="modal">I understand</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- When to Use -->
+    <div class="modal fade rc-modal" id="rc-modal-when" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="rc-modal-when-title">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="rc-modal-when-title">When to Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>This tool estimates the 2-week probability of treatment-requiring ROP development. Use it for risk-based scheduling and escalation discussions within the next 14 days.</p>
+            <ul>
+              <li><strong>Inputs:</strong> Gestational age (GA), current postmenstrual age (PMA), and P-score.</li>
+              <li><strong>Input ranges:</strong> GA 22&ndash;31 wks; PMA 30&ndash;50 wks; P-score 1&ndash;9.</li>
+              <li><strong>Outputs:</strong> Risk of treatment within the next two weeks: Low Risk or High Risk.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Considerations -->
+    <div class="modal fade rc-modal" id="rc-modal-considerations" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="rc-modal-considerations-title">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="rc-modal-considerations-title">Considerations</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li><strong>Extrapolation:</strong> Avoid use outside the input ranges.</li>
+              <li><strong>P-score variability:</strong> Inter-rater differences can shift risk.</li>
+              <li><strong>Population differences:</strong> Consider local validation/calibration.</li>
+              <li><strong>Time window:</strong> Estimate applies to the next 14 days only.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Use -->
+    <div class="modal fade rc-modal" id="rc-modal-why" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="rc-modal-why-title">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="rc-modal-why-title">Why Use</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li><strong>Objective:</strong> Quantifies 2-week TR-ROP risk to complement exam findings.</li>
+              <li><strong>Triage:</strong> Supports risk-based follow-up scheduling.</li>
+              <li><strong>Communication:</strong> Clear categories for team/family discussions.</li>
+              <li><strong>Quality:</strong> Transparent inputs/outputs enable audit and calibration.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer information, format however you'd like -->
+    <div class="push"></div></div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; text &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Core JavaScript (modals) -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js_html/riskModel.js"></script>
+    <script src="js_html/riskCalculator.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        var url = window.location;
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.nav a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+    })
+    </script>
+  </body>
+</html>
