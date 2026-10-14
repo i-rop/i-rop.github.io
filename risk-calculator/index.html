@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- chrome:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d171c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<!-- /chrome:head -->
+<title>2-Week TR-ROP Risk Calculator · i-ROP</title>
+<meta name="description" content="Estimate the 2-week risk of treatment-requiring retinopathy of prematurity (TR-ROP) from gestational age, postmenstrual age and P-score.">
+<link rel="canonical" href="https://i-rop.github.io/risk-calculator/">
+<meta property="og:site_name" content="i-ROP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2-Week TR-ROP Risk Calculator · i-ROP">
+<meta property="og:description" content="Estimate the 2-week risk of treatment-requiring retinopathy of prematurity (TR-ROP) from gestational age, postmenstrual age and P-score.">
+<meta property="og:url" content="https://i-rop.github.io/risk-calculator/">
+<meta property="og:image" content="https://i-rop.github.io/images/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<!-- chrome:header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="../index.html">
+            <img class="brand-mark" src="../images/brand/irop-mark.jpg" width="40" height="40" alt="">
+            <span class="brand-text">
+                <span class="brand-name">i-ROP</span>
+                <span class="brand-tag">Imaging and Informatics in Retinopathy of Prematurity</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="visually-hidden">Menu</span>
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="../cliniciansExamples.html">Clinician examples</a></li>
+                <li><a href="../cliniciansSeverityScale.html">Severity scale</a></li>
+                <li><a href="../people.html">People</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../funding.html">Funding</a></li>
+                <li><a class="nav-cta" href="../risk-calculator/" aria-current="page">Risk calculator</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- /chrome:header -->
+<main id="main">
+<header class="page-header">
+<div class="container">
+<h1>2-Week TR-ROP Risk Calculator</h1>
+<div class="rc-info-links">
+<button type="button" class="btn btn-outline btn-sm" data-dialog="rc-when" aria-haspopup="dialog">When to Use <span aria-hidden="true">&#9662;</span></button>
+<button type="button" class="btn btn-outline btn-sm" data-dialog="rc-considerations" aria-haspopup="dialog">Considerations <span aria-hidden="true">&#9662;</span></button>
+<button type="button" class="btn btn-outline btn-sm" data-dialog="rc-why" aria-haspopup="dialog">Why Use <span aria-hidden="true">&#9662;</span></button>
+</div>
+</div>
+</header>
+
+<div class="section">
+<div class="container">
+<noscript><p class="notice">This calculator needs JavaScript to run.</p></noscript>
+<div class="rc-layout">
+
+<form id="rc-form" class="rc-card" autocomplete="off" novalidate>
+<h2 class="rc-card-title">Patient Inputs</h2>
+
+<fieldset class="rc-group">
+<legend>Gestational Age</legend>
+<div class="rc-row">
+<div class="rc-field">
+<label for="rc-ga-weeks">Weeks</label>
+<input type="number" id="rc-ga-weeks" value="30" step="1" inputmode="numeric">
+</div>
+<div class="rc-field">
+<label for="rc-ga-days">Days</label>
+<input type="number" id="rc-ga-days" value="0" step="1" inputmode="numeric">
+</div>
+</div>
+</fieldset>
+
+<fieldset class="rc-group">
+<legend>Postmenstrual Age</legend>
+<div class="rc-row">
+<div class="rc-field">
+<label for="rc-pma-weeks">Weeks</label>
+<input type="number" id="rc-pma-weeks" value="34" step="1" inputmode="numeric">
+</div>
+<div class="rc-field">
+<label for="rc-pma-days">Days</label>
+<input type="number" id="rc-pma-days" value="0" step="1" inputmode="numeric">
+</div>
+</div>
+</fieldset>
+
+<div class="rc-group">
+<div class="rc-field">
+<label for="rc-pscore" class="rc-group-title">P-Score</label>
+<input type="number" id="rc-pscore" value="1" step="1" inputmode="numeric">
+</div>
+</div>
+
+<div id="rc-problems" class="rc-alert" role="alert" hidden></div>
+
+<button type="submit" class="btn btn-primary rc-submit">Calculate</button>
+</form>
+
+<section class="rc-card rc-result" aria-live="polite" aria-atomic="true" aria-labelledby="rc-result-title">
+<h2 class="visually-hidden" id="rc-result-title">Result</h2>
+<p id="rc-placeholder" class="muted">Enter the patient's values and press <strong>Calculate</strong>.</p>
+<div id="rc-result" hidden>
+<div id="rc-badge" class="rc-badge"></div>
+<div class="rc-params">
+<h3>Input Parameters</h3>
+<pre id="rc-params"></pre>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</div>
+</main>
+
+<!-- Acknowledgement: shown on every visit, and only closes with its button (see calculator.js) -->
+<dialog id="rc-ack" class="rc-dialog" aria-labelledby="rc-ack-title">
+<div class="rc-dialog-head"><h2 id="rc-ack-title">Acknowledgement</h2></div>
+<div class="rc-dialog-body">
+<p>This tool estimates the 2-week risk of treatment-requiring ROP from gestational age, postmenstrual age, and P-score (a measure of vascular severity).
+It should be used to assist in determining whether a 1-week vs 2-week follow-up exam is necessary.
+Its aim is to support, not replace, clinical judgment and is for investigational use only.
+It has only been validated for use on US populations.</p>
+</div>
+<div class="rc-dialog-foot"><button type="button" class="btn btn-primary" data-ack>I understand</button></div>
+</dialog>
+
+<dialog id="rc-when" class="rc-dialog" aria-labelledby="rc-when-title">
+<div class="rc-dialog-head">
+<h2 id="rc-when-title">When to Use</h2>
+<button type="button" class="rc-dialog-close" data-close aria-label="Close">&times;</button>
+</div>
+<div class="rc-dialog-body">
+<p>This tool estimates the 2-week probability of treatment-requiring ROP development. Use it for risk-based scheduling and escalation discussions within the next 14 days.</p>
+<ul>
+<li><strong>Inputs:</strong> Gestational age (GA), current postmenstrual age (PMA), and P-score.</li>
+<li><strong>Input ranges:</strong> GA 22&ndash;31 wks; PMA 30&ndash;50 wks; P-score 1&ndash;9.</li>
+<li><strong>Outputs:</strong> Risk of treatment within the next two weeks: Low Risk or High Risk.</li>
+</ul>
+</div>
+<div class="rc-dialog-foot"><button type="button" class="btn btn-outline" data-close>Close</button></div>
+</dialog>
+
+<dialog id="rc-considerations" class="rc-dialog" aria-labelledby="rc-considerations-title">
+<div class="rc-dialog-head">
+<h2 id="rc-considerations-title">Considerations</h2>
+<button type="button" class="rc-dialog-close" data-close aria-label="Close">&times;</button>
+</div>
+<div class="rc-dialog-body">
+<ul>
+<li><strong>Extrapolation:</strong> Avoid use outside the input ranges.</li>
+<li><strong>P-score variability:</strong> Inter-rater differences can shift risk.</li>
+<li><strong>Population differences:</strong> Consider local validation/calibration.</li>
+<li><strong>Time window:</strong> Estimate applies to the next 14 days only.</li>
+</ul>
+</div>
+<div class="rc-dialog-foot"><button type="button" class="btn btn-outline" data-close>Close</button></div>
+</dialog>
+
+<dialog id="rc-why" class="rc-dialog" aria-labelledby="rc-why-title">
+<div class="rc-dialog-head">
+<h2 id="rc-why-title">Why Use</h2>
+<button type="button" class="rc-dialog-close" data-close aria-label="Close">&times;</button>
+</div>
+<div class="rc-dialog-body">
+<ul>
+<li><strong>Objective:</strong> Quantifies 2-week TR-ROP risk to complement exam findings.</li>
+<li><strong>Triage:</strong> Supports risk-based follow-up scheduling.</li>
+<li><strong>Communication:</strong> Clear categories for team/family discussions.</li>
+<li><strong>Quality:</strong> Transparent inputs/outputs enable audit and calibration.</li>
+</ul>
+</div>
+<div class="rc-dialog-foot"><button type="button" class="btn btn-outline" data-close>Close</button></div>
+</dialog>
+
+<!-- chrome:footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img class="footer-logo" src="../images/brand/irop-logo.jpg" width="240" height="56" loading="lazy" alt="i-ROP: Imaging and Informatics in Retinopathy of Prematurity">
+                <p>The i-ROP consortium is led by Oregon Health &amp; Science University (OHSU) and has been funded by the National Institutes of Health since 2010.</p>
+            </div>
+            <nav aria-label="Resources">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="../cliniciansExamples.html">Clinician examples</a></li>
+                    <li><a href="../cliniciansSeverityScale.html">Severity scale</a></li>
+                    <li><a href="../risk-calculator/">Risk calculator</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Consortium">
+                <h2>Consortium</h2>
+                <ul>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../funding.html">Funding</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 i-ROP</p>
+            <p><a href="#">Back to top</a></p>
+        </div>
+    </div>
+</footer>
+<script src="../js/site.js" defer></script>
+<!-- /chrome:footer -->
+<script src="model.js" defer></script>
+<script src="calculator.js" defer></script>
+</body>
+</html>

@@ -1,207 +1,271 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title id="main-title"></title>
-    <script src="js_html/makeTitle.js"></script>
-
-    <!-- jquery before bootstrap -->
-    <script src="js/jquery-1.12.2.js"></script>
-
-    <!-- load css common to site pages -->
-    <script src="js_html/loadCss.js"></script>
-
-    <!-- Fonts, probably should be extracted -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Lato' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500|Arimo:400,700|Roboto:400,500' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-
-    <div id="search-bar" class="wrapper">
-    <!-- <script src="js_html/makeSearchBar.js"></script> -->
-
-    <div id="titleImg" class="container">
-      <script src="js_html/makeTitleImg.js"></script>
+<html lang="en">
+<head>
+<!-- chrome:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d171c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<!-- /chrome:head -->
+<title>Clinicians: Examples · i-ROP</title>
+<meta name="description" content="Example retinal images illustrating zone, stage, plus disease and aggressive posterior ROP (AP-ROP).">
+<link rel="canonical" href="https://i-rop.github.io/cliniciansExamples.html">
+<meta property="og:site_name" content="i-ROP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clinicians: Examples · i-ROP">
+<meta property="og:description" content="Example retinal images illustrating zone, stage, plus disease and aggressive posterior ROP (AP-ROP).">
+<meta property="og:url" content="https://i-rop.github.io/cliniciansExamples.html">
+<meta property="og:image" content="https://i-rop.github.io/images/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<!-- chrome:header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/brand/irop-mark.jpg" width="40" height="40" alt="">
+            <span class="brand-text">
+                <span class="brand-name">i-ROP</span>
+                <span class="brand-tag">Imaging and Informatics in Retinopathy of Prematurity</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="visually-hidden">Menu</span>
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="cliniciansExamples.html" aria-current="page">Clinician examples</a></li>
+                <li><a href="cliniciansSeverityScale.html">Severity scale</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="funding.html">Funding</a></li>
+                <li><a class="nav-cta" href="risk-calculator/">Risk calculator</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+<!-- /chrome:header -->
+<main id="main">
+<header class="page-header">
+<div class="container">
+<h1>Clinicians: Examples</h1>
+<ul class="chips" aria-label="Jump to a section">
+<li><a href="#zone">Zone</a></li>
+<li><a href="#Stage">Stage</a></li>
+<li><a href="#plus">Plus</a></li>
+</ul>
+</div>
+</header>
 
-        <!-- Navigation -->
-    <nav id="top-navbar" class="navbar"></nav>
-    <script src="js_html/makeNavBar.js"></script>
-
+<div class="section">
+<div class="container">
+<section class="example-section" id="zone" aria-labelledby="zone-title">
+<h2 id="zone-title">Zone</h2>
+<div class="example-block">
+<ul class="figure-grid figure-grid--single">
+<li><figure>
+<a class="zoom" href="images/examples/slide04.jpg"><img src="images/examples/slide04.jpg" alt="ROP zone diagram: Zone I, Zone II and Zone III, with clock hours and the ora serrata" width="720" height="540" loading="lazy"></a>
+<figcaption>Zone overview</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Zone I</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/ohsu-0058-5-os.jpg"><img src="images/examples/ohsu-0058-5-os.jpg" alt="Zone I: example retinal image" width="640" height="480" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/slide05.jpg"><img src="images/examples/slide05.jpg" alt="Zone I: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Zone II</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/beau-0061-4-ostemp.jpg"><img src="images/examples/beau-0061-4-ostemp.jpg" alt="Zone II: example retinal image" width="640" height="480" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/zoneii.jpg"><img src="images/examples/zoneii.jpg" alt="Zone II: annotated retinal image" width="478" height="363" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Zone III</h3>
+<ul class="figure-grid figure-grid--single">
+<li><figure>
+<a class="zoom" href="images/examples/slide09.jpg"><img src="images/examples/slide09.jpg" alt="Zone III: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+</section>
+<section class="example-section" id="Stage" aria-labelledby="stage-title">
+<h2 id="stage-title">Stage</h2>
+<div class="example-block">
+<h3>Examples of Stage 1</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/ohsu-0190-3-od-temporal.jpg"><img src="images/examples/ohsu-0190-3-od-temporal.jpg" alt="Stage 1: example retinal image" width="640" height="480" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/stage-1.jpg"><img src="images/examples/stage-1.jpg" alt="Stage 1: annotated retinal image" width="478" height="358" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Stage 2</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/rcol67-2-odtemp.jpg"><img src="images/examples/rcol67-2-odtemp.jpg" alt="Stage 2: example retinal image" width="1024" height="768" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/slide16.jpg"><img src="images/examples/slide16.jpg" alt="Stage 2: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Stage 3</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/rcol34-2-odtemp.jpg"><img src="images/examples/rcol34-2-odtemp.jpg" alt="Stage 3: example retinal image" width="1024" height="768" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/stage-3.jpg"><img src="images/examples/stage-3.jpg" alt="Stage 3: annotated retinal image" width="533" height="400" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Stage 4</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/stage-4a.jpg"><img src="images/examples/stage-4a.jpg" alt="Stage 4a: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Stage 4a</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/stage-4b.jpg"><img src="images/examples/stage-4b.jpg" alt="Stage 4b: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Stage 4b</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Stage 5</h3>
+<ul class="figure-grid figure-grid--single">
+<li><figure>
+<a class="zoom" href="images/examples/stage-5.jpg"><img src="images/examples/stage-5.jpg" alt="Stage 5: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+</section>
+<section class="example-section" id="plus" aria-labelledby="plus-title">
+<h2 id="plus-title">Plus</h2>
+<div class="example-block">
+<h3>Examples of No Plus</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/ohsu-0006-sr-2nd-session-os-posterior.jpg"><img src="images/examples/ohsu-0006-sr-2nd-session-os-posterior.jpg" alt="No plus disease: example retinal image A" width="640" height="480" loading="lazy"></a>
+<figcaption>Example A</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/ohsu-0118-10-od-posterior.jpg"><img src="images/examples/ohsu-0118-10-od-posterior.jpg" alt="No plus disease: example retinal image B" width="640" height="480" loading="lazy"></a>
+<figcaption>Example B</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Pre-Plus</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/ohsu-0124-6-os-posterior.jpg"><img src="images/examples/ohsu-0124-6-os-posterior.jpg" alt="Pre-plus disease: example retinal image" width="640" height="480" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/slide15-1.jpg"><img src="images/examples/slide15-1.jpg" alt="Pre-plus disease: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of Plus</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/24-second-os-posterior.jpg"><img src="images/examples/24-second-os-posterior.jpg" alt="Plus disease: example retinal image" width="640" height="480" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/slide30.jpg"><img src="images/examples/slide30.jpg" alt="Plus disease: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+<div class="example-block">
+<h3>Examples of AP-ROP</h3>
+<ul class="figure-grid">
+<li><figure>
+<a class="zoom" href="images/examples/ap-rop-18.jpg"><img src="images/examples/ap-rop-18.jpg" alt="AP-ROP: example retinal image" width="1024" height="768" loading="lazy"></a>
+<figcaption>Example</figcaption>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/examples/slide37.jpg"><img src="images/examples/slide37.jpg" alt="AP-ROP: annotated retinal image" width="720" height="540" loading="lazy"></a>
+<figcaption>Annotated</figcaption>
+</figure></li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- chrome:footer -->
+<footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="box">
-          <div class="col-lg-12">
-            <div class="row2">
-              <div class="box2 center">
-                <h1>Clinicians: Examples</h1>
-              </div>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img class="footer-logo" src="images/brand/irop-logo.jpg" width="240" height="56" loading="lazy" alt="i-ROP: Imaging and Informatics in Retinopathy of Prematurity">
+                <p>The i-ROP consortium is led by Oregon Health &amp; Science University (OHSU) and has been funded by the National Institutes of Health since 2010.</p>
             </div>
-            <!-- Zone -->
-            <div class="center" id="zone">
-              <h2>Zone</h2>
-              <img src="images/research/Slide04.jpg" alt="zone 1 notes" class="researchExample">
-              <h4>Examples of Zone I</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/OHSU-0058-5-OS.jpg" alt="zone 1 example no notes" class="researchExample"></td>
-                    <td><img src="images/research/Slide05.jpg" alt="zone 1 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Zone II</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/Beau-0061-4-ostemp.jpg" alt="zone 2 example no notes" class="researchExample"></td>
-                    <td><img src="images/research/ZoneII.PNG" alt="zone 2 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Zone III</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/Slide09.jpg" alt="zone 3" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <br>
-            <div class="center" id="Stage">
-              <h2>Stage</h2>
-              <h4>Examples of Stage 1</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/ohsu-0190-3-OD-temporal.bmp" alt="stage 1 example no notes" class="researchExample"></td>
-                    <td><img src="images/research/stage_1.PNG" alt="stage 1 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Stage 2</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/RCOL67-2-ODtemp.png" alt="stage 2 example no notes" class="researchExample"></td>
-                    <td><img src="images/research/Slide16.jpg" alt="stage 2 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Stage 3</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/RCOL34-2-ODtemp.png" alt="stage 3 example no notes" class="researchExample"></td>
-                    <td><img src="images/research/stage_3.PNG" alt="stage 3 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Stage 4</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/stage 4a.jpg" alt="stage 4 example no notes" class="researchExample"></td>
-                    <td><img src="images/research/stage 4b.jpg" alt="stage 4 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Stage 5</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/stage 5.jpg" alt="stage 5 notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <br>
-            <!-- Plus -->
-            <div class="center" id="plus">
-              <h2>Plus</h2>
-              <h4>Examples of No Plus</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/ohsu-0006-sr-2nd session-OS-posterior.bmp" alt="no plus a" class="researchExample"></td>
-                    <td><img src="images/research/ohsu-0118-10-OD-posterior.bmp" alt="no plus b" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Pre-Plus</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/ohsu-0124-6-OS-posterior.bmp" alt="pre plus no notes" class="researchExample"></td>
-                    <td><img src="images/research/Slide15(1).JPG" alt="pre plus notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of Plus</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/24-second-OS-posterior.bmp" alt="plus" class="researchExample"></td>
-                    <td><img src="images/research/Slide30.jpg" alt="plus notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Examples of AP-ROP</h4>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/research/AP-ROP_18.png" alt="AP-ROP" class="researchExample"></td>
-                    <td><img src="images/research/Slide37.jpg" alt="AP-ROP notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+            <nav aria-label="Resources">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="cliniciansExamples.html">Clinician examples</a></li>
+                    <li><a href="cliniciansSeverityScale.html">Severity scale</a></li>
+                    <li><a href="risk-calculator/">Risk calculator</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Consortium">
+                <h2>Consortium</h2>
+                <ul>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </div>
-    <!-- /.container -->
-
-
-    <div class="push"></div></div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; text &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-          </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 i-ROP</p>
+            <p><a href="#">Back to top</a></p>
         </div>
-      </div>
     </div>
-    </body>
-
-    <!--End body-->
-
-    <!-- Bootstrap Core JavaScript
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.min.js"></script> -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
+</footer>
+<script src="js/site.js" defer></script>
+<!-- /chrome:footer -->
+</body>
 </html>

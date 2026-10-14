@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://i-rop.github.io/sitemap.xml

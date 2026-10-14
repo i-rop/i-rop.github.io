@@ -1,131 +1,143 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title id="main-title"></title>
-    <script src="js_html/makeTitle.js"></script>
-
-    <!-- jquery before bootstrap -->
-    <script src="js/jquery-1.12.2.js"></script>
-
-    <!-- load css common to site pages -->
-    <script src="js_html/loadCss.js"></script>
-
-    <!-- Fonts, probably should be extracted -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Lato' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500|Arimo:400,700|Roboto:400,500' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-
-    <div id="search-bar" class="wrapper">
-    <!-- <script src="js_html/makeSearchBar.js"></script> -->
-
-    <div id="titleImg" class="container">
-      <script src="js_html/makeTitleImg.js"></script>
+<html lang="en">
+<head>
+<!-- chrome:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d171c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<!-- /chrome:head -->
+<title>Clinicians: Severity Scale · i-ROP</title>
+<meta name="description" content="The i-ROP severity score (1 to 9) for retinal vascular abnormality in retinopathy of prematurity, with nine representative retinal images.">
+<link rel="canonical" href="https://i-rop.github.io/cliniciansSeverityScale.html">
+<meta property="og:site_name" content="i-ROP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clinicians: Severity Scale · i-ROP">
+<meta property="og:description" content="The i-ROP severity score (1 to 9) for retinal vascular abnormality in retinopathy of prematurity, with nine representative retinal images.">
+<meta property="og:url" content="https://i-rop.github.io/cliniciansSeverityScale.html">
+<meta property="og:image" content="https://i-rop.github.io/images/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<!-- chrome:header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/brand/irop-mark.jpg" width="40" height="40" alt="">
+            <span class="brand-text">
+                <span class="brand-name">i-ROP</span>
+                <span class="brand-tag">Imaging and Informatics in Retinopathy of Prematurity</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="visually-hidden">Menu</span>
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="cliniciansExamples.html">Clinician examples</a></li>
+                <li><a href="cliniciansSeverityScale.html" aria-current="page">Severity scale</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="funding.html">Funding</a></li>
+                <li><a class="nav-cta" href="risk-calculator/">Risk calculator</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+<!-- /chrome:header -->
+<main id="main">
+<header class="page-header">
+<div class="container">
+<h1>Clinicians: Severity Scale</h1>
+</div>
+</header>
 
-        <!-- Navigation -->
-    <nav id="top-navbar" class="navbar"></nav>
-    <script src="js_html/makeNavBar.js"></script>
-
+<div class="section">
+<div class="container">
+<div class="prose">
+<p>The i-ROP severity score (1-9) represents a continuous range of vascular abnormality. The 9 representative retinal images are shown here, in order of increasing disease severity, based on diagnostic classification of rankings by 8 experts as referenced in <a href="https://pubmed.ncbi.nlm.nih.gov/27591053/">this study</a>. Future work will integrate <a href="https://pubmed.ncbi.nlm.nih.gov/27566853/">computer-based image analysis methods</a>.</p>
+</div>
+<div class="scale-bar"><span>Normal</span><span>Plus</span></div>
+<ul class="scale-grid">
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-1.jpg"><img src="images/SeverityScale/scale-1.jpg" alt="i-ROP severity scale: retinal image 1 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">1</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-2.jpg"><img src="images/SeverityScale/scale-2.jpg" alt="i-ROP severity scale: retinal image 2 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">2</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-3.jpg"><img src="images/SeverityScale/scale-3.jpg" alt="i-ROP severity scale: retinal image 3 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">3</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-4.jpg"><img src="images/SeverityScale/scale-4.jpg" alt="i-ROP severity scale: retinal image 4 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">4</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-5.jpg"><img src="images/SeverityScale/scale-5.jpg" alt="i-ROP severity scale: retinal image 5 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">5</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-6.jpg"><img src="images/SeverityScale/scale-6.jpg" alt="i-ROP severity scale: retinal image 6 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">6</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-7.jpg"><img src="images/SeverityScale/scale-7.jpg" alt="i-ROP severity scale: retinal image 7 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">7</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-8.jpg"><img src="images/SeverityScale/scale-8.jpg" alt="i-ROP severity scale: retinal image 8 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">8</span>
+</figure></li>
+<li><figure>
+<a class="zoom" href="images/SeverityScale/scale-9.jpg"><img src="images/SeverityScale/scale-9.jpg" alt="i-ROP severity scale: retinal image 9 of 9" width="640" height="480" loading="lazy"></a>
+<span class="scale-num" aria-hidden="true">9</span>
+</figure></li>
+</ul>
+</div>
+</div>
+</main>
+<!-- chrome:footer -->
+<footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="box">
-          <div class="col-lg-12">
-            <div class="row2">
-              <div class="box2 center">
-                <h1>Clinicians: Severity Scale & App</h1>
-              </div>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img class="footer-logo" src="images/brand/irop-logo.jpg" width="240" height="56" loading="lazy" alt="i-ROP: Imaging and Informatics in Retinopathy of Prematurity">
+                <p>The i-ROP consortium is led by Oregon Health &amp; Science University (OHSU) and has been funded by the National Institutes of Health since 2010.</p>
             </div>
-            <!-- Zone -->
-            <div id="severityScale">
-              <!-- <h2>Zone</h2>
-              <img src="images/research/Slide04.jpg" alt="zone 1 notes" class="researchExample"> -->
-              <p><small>i-ROP ASSIST is a free mobile app that allows you to compare your retinal images with a set of 9 representative images to assess disease severity.</small></p>
-              <div class="app-links">
-                <a class="app-dl android" href="https://play.google.com/store/apps/details?id=com.irop.assist" target="_blank"></a>
-                <a class="app-dl apple" href="https://itunes.apple.com/us/app/i-rop-assist/id1227481296?mt=8" target="_blank"></a>
-              </div><br />
-              <p><small>The i-ROP severity score (1-9) represents a continuous range of vascular abnormality. The 9 representative retinal images are shown here, in order of increasing disease severity, based on diagnostic classification of rankings by 8 experts as referenced in <a href="https://www.ncbi.nlm.nih.gov/pubmed/27591053">this study</a>. Future work will integrate <a href="https://www.ncbi.nlm.nih.gov/pubmed/27566853">computer-based image analysis methods</a>.</small></p>
-              <h2 align="center">Normal</h2>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/SeverityScale/1.bmp" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/2.bmp" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/3.bmp" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/4.bmp" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/5.JPG" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/6.JPG" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/7.JPG" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/8.bmp" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/SeverityScale/9.bmp" alt="zone 1 example no notes" class="researchExample"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h2 align="center">Plus</h2>
-            </div>
-          </div>
+            <nav aria-label="Resources">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="cliniciansExamples.html">Clinician examples</a></li>
+                    <li><a href="cliniciansSeverityScale.html">Severity scale</a></li>
+                    <li><a href="risk-calculator/">Risk calculator</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Consortium">
+                <h2>Consortium</h2>
+                <ul>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </div>
-    <!-- /.container -->
-
-
-    <div class="push"></div></div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; text &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-          </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 i-ROP</p>
+            <p><a href="#">Back to top</a></p>
         </div>
-      </div>
     </div>
-    </body>
-
-    <!--End body-->
-
-    <!-- Bootstrap Core JavaScript
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.min.js"></script> -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
+</footer>
+<script src="js/site.js" defer></script>
+<!-- /chrome:footer -->
+</body>
 </html>

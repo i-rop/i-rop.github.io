@@ -1,514 +1,652 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<html lang="en">
+<head>
+<!-- chrome:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d171c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<!-- /chrome:head -->
+<title>People · i-ROP</title>
+<meta name="description" content="The i-ROP consortium: the coordinating center, site principal investigators and personnel at participating institutions.">
+<link rel="canonical" href="https://i-rop.github.io/people.html">
+<meta property="og:site_name" content="i-ROP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="People · i-ROP">
+<meta property="og:description" content="The i-ROP consortium: the coordinating center, site principal investigators and personnel at participating institutions.">
+<meta property="og:url" content="https://i-rop.github.io/people.html">
+<meta property="og:image" content="https://i-rop.github.io/images/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<!-- chrome:header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/brand/irop-mark.jpg" width="40" height="40" alt="">
+            <span class="brand-text">
+                <span class="brand-name">i-ROP</span>
+                <span class="brand-tag">Imaging and Informatics in Retinopathy of Prematurity</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="visually-hidden">Menu</span>
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="cliniciansExamples.html">Clinician examples</a></li>
+                <li><a href="cliniciansSeverityScale.html">Severity scale</a></li>
+                <li><a href="people.html" aria-current="page">People</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="funding.html">Funding</a></li>
+                <li><a class="nav-cta" href="risk-calculator/">Risk calculator</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- /chrome:header -->
+<main id="main">
+<header class="page-header">
+<div class="container">
+<h1>i-ROP Personnel</h1>
+<ul class="chips" aria-label="Jump to a group">
+<li><a href="#coordinating-center">Coordinating Center</a></li>
+<li><a href="#site-principal-investigators">Site Principal Investigators</a></li>
+<li><a href="#personnel">Personnel</a></li>
+<li><a href="#past-personnel">Past Personnel</a></li>
+</ul>
+</div>
+</header>
 
-    <title>i-ROP - People</title>
-
-    <!-- jQuery before bootstrap -->
-    <script src="js/jquery-1.12.2.js"></script>
-
-    <!-- load css common to site pages -->
-    <script src="js_html/loadCss.js"></script>
-
-    <!-- Fonts, probably should be extracted -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Lato' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500|Arimo:400,700|Roboto:400,500' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-
-  <body>
-    <!-- <div id="search-bar" class="wrapper"> -->
-        <!-- <script src="js_html/makeSearchBar.js"></script> -->
-
-    <div id="titleImg" class="container"></div>
-    <script src="js_html/makeTitleImg.js"></script>
-
-
-    <!-- Navigation -->
-    <nav id="top-navbar" class="navbar"></nav>
-    <script src="js_html/makeNavBar.js"></script>
-
-
-		<div id="content">
-      <div class="container">
-        <div class="row">
-          <div class="box">
-            <div class="col-lg-12">
-              <div class="center"><h1>i-ROP Personnel</h1></div>
-              <br>
-              <div class="center"><h3>Coordinating Center</h3></div>
-              <br>
-              <table class="table table-borderless">
-                <thead>
-                </thead>
-                <tbody>
-                 <!-- Place people information here -->
-                  <tr>
-                   <td><img src="images/people/Peter Campbell, MD.jpg" alt="Peter Campbell, MD, MPH ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.ohsu.edu/xd/health/services/providers/index.cfm?personID=3251">Peter Campbell, MD, MPH</a><br>Study Principal Investigator</td>
-                    <td>Oregon Health & Science University</td>
-                  </tr>
-			
-                  <tr>
-                   <td><img src="images/people/susano5b.bmp" alt="Susan Ostmo: ophthalmology and imaging & informatics in ROP reasearch (i-ROP) lead coordinator" class="img-thumbnail"></td> 
-		   <td> <a href="https://docs.google.com/presentation/d/1Qx1eBVTfXqFVYR63Nq4o-TvNdk4XttpUXb2RmlGmBHA/edit#slide=id.p">Susan Ostmo, MS</a><br>
-                   Research Administrator<br>ROP Program<br><a href="mailto:ostmo@ohsu.edu">ostmo@ohsu.edu<img class="mailToPic" src="images/people/mailto.png"></a></td>
-                   <td> Oregon Health &amp; Science University</td>
-                  </tr>
-		   
-                </tbody>
-              </table>
-              <br>
-              <div class="center"><h3>Site Principal Investigators</h3></div>
-              <br>
-              <br>
-              <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td><img src="images/people/Audina_Berrocal.jpg" alt="Audina Berrocal ophthalmology and imaging & informatics in ROP research (i-ROP) Miami site PI" class="img-thumbnail"></td>
-                    <td><a href="http://umiamihospital.org/doctors/profile/1358">Audina Berrocal, MD</a></td>
-                    <td>Faculty, University of Miami</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/paul chan.jpg" alt="Paul Chan ophthalmology and imaging & informatics in ROP research (i-ROP) UIC site PI" class="img-thumbnail"></td>
-                    <td><a href="http://chicago.medicine.uic.edu/departments/academic-departments/opthalmology-visual-sciences/our-department/faculty/name/paul-chan/">R.V. Paul Chan, MD, FACS</a><br></td>
-                    <td>Faculty, University of Illinois at Chicago</a></td>
-                  </tr>
-			<td><img src="images/MChiang_image.jpeg" alt="Michael Chiang ophthalmology and imaging & informatics in ROP research(i-ROP)Collaborator" class="img-thumbnail"></td><td><a href="https://www.nei.nih.gov/about/nei-leadership/michael-f-chiang-md">Michael F. Chiang, MD</a><br></td>
-                    <td>Director, National Eye Institute</a></td>
-                   <td> 
-                  <tr>
-                    <td><img src="images/people/Kimberly Drenser, MD PhD.jpg" alt="Kimberly Drenser, MD, PhD: ophthalmology and imaging & informatics in ROP research (i-ROP) Beaumont site PI" class="img-thumbnail"></td>
-                    <td><a href="https://arcpc.org/our-physicians/">Kimberly Drenser, MD, PhD</a></td>
-                    <td>Faculty, William Beaumont Hospital‎</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/deniz_erdogmus.jpg" alt="Deniz Erdogmus, PhD: ophthalmology and imaging & informatics in ROP research (i-ROP) Northeastern site PI" class="img-thumbnail"></td>
-                    <td><a href="http://www1.ece.neu.edu/~erdogmus/">Deniz Erdogmus, PhD</a></td>
-                    <td>Faculty, Northeastern University</td>
-                  </tr>
-			<tr>
-                    <td><img src="images/people/ME_Hartnett.jpg" alt="ME Hartnett, MD: ophthalmology and imaging & informatics in ROP research (i-ROP) University of Utah site PI" class="img-thumbnail"></td>
-                    <td><a href="https://healthcare.utah.edu/fad/mddetail.php?physicianID=u0708256&name=mary-elizabeth-hartnett">ME Hartnett, MD</a></td>
-                    <td>Faculty, University of Utah</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/jdhorowitz.jpg" alt="Jason Horowitz ophthalmology and imaging & informatics in ROP research (i-ROP) Columbia site PI" class="img-thumbnail"></td>
-                    <td><a href="http://www.columbiadoctors.org/prof/jdhorowitz">Jason Horowitz, MD</a></td>
-                    <td>Faculty, Columbia Unviersity</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Jayashree Kalpathy Cramer.jpg" alt="Jayashree Kalpathy-Cramer, PhD ophthalmology and imaging & informatics in ROP research (i-ROP) Mass General site PI" class="img-thumbnail"></td>
-                    <td><a href="https://www.nmr.mgh.harvard.edu/user/8165">Jayashree Kalpathy-Cramer, PhD </a></td>
-                    <td>Faculty, Massachesetts General Hospital</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Lee Thomas.jpg" alt="Thomas Lee ophthalmology and imaging & informatics in ROP research (i-ROP) CHLA site PI" class="img-thumbnail"></td>
-                    <td><a href="http://www.chla.org/profile/thomas-c-lee-md">Thomas Lee, MD</a></td>
-                    <td>Faculty, Children's Hospital Los Angeles</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Maria Ana Martinez-Castellanos.jpg" alt="Maria Ana Martinez-Castellanos, MD ophthalmology and imaging & informatics in ROP research (i-ROP) APEC site PI" class="img-thumbnail"></td>
-                    <td><a href="https://www.asrs.org/find-a-specialist/profile/5004/Maria-A-Martinez-Castellanos">Maria Ana Martinez-Castellanos, MD</a></td>
-                    <td>Faculty, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-			<tr>
-                    <td><img src="images/people/Darius-Moshfeghi.jpg" alt="Darius Moshfeghi ophthalmology and imaging & informatics in ROP research (i-ROP) Stanford site PI" class="img-thumbnail"></td>
-                    <td><a href="https://profiles.stanford.edu/darius-moshfeghi">Darius Moshfeghi, MD</a><br><a></td>
-                    <td>Faculty, Stanford University</a></td>
-                  </tr>
-			<tr>
-                    <td><img src="images/people/Nagiel.jpg" alt="Aaron Nagiel ophthalmology and imaging & informatics in ROP research (i-ROP) Children's Hospital Los Angeles site PI" class="img-thumbnail"></td>
-                    <td><a href="https://www.chla.org/profile/aaron-nagiel-md-phd">Aaron Nagiel, MD</a><br><a></td>
-                    <td>Faculty, University of Southern California</a></td>
-                  </tr>
-	  <tr>
-                    <td><img src="images/people/owen,leah.jpg" alt="Leah Owen, MD: ophthalmology and imaging & informatics in ROP research (i-ROP) University of Utah site PI" class="img-thumbnail"></td>
-                    <td><a href="https://healthcare.utah.edu/fad/mddetail.php?physicianID=u0154853&name=leah-a-owen">Leah Owen, MD</a></td>
-                    <td>Faculty, University of Utah</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/rotter-jerome.jpg" alt="Jerome Rotter, MD ophthalmology and imaging & informatics in ROP research (i-ROP) LA Biomed site PI" class="img-thumbnail"></td>
-                    <td><a href="https://labiomed.org/jerome-i-rotter-md">Jerome Rotter, MD</a></td>
-                    <td>Faculty, Lundquist Research Institute</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Charles-F-Simmons.jpg" alt="Charles Simmons, MD ophthalmology and imaging & informatics in ROP research (i-ROP) Cedars-Sinai site PI" class="img-thumbnail"></td>
-                    <td><a href="http://bio.csmc.edu/view/5905/Charles-F-Simmons.aspx">Charles Simmons, MD</a></td>
-                    <td>Faculty, Cedars-Sinai Medical Center</td>
-                  </tr>
-		 <tr>
-                    <td><img src="images/people/ioannidis.jpg" alt="Stratis Ioannidis, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.ece.neu.edu/people/ioannidis-stratis">Stratis Ioannidis, PhD</td>
-                    <td>Faculty, Northeastern University</td>
-                  </tr>
-			<tr>
-                    
-                  </tr>
-                </tbody>
-              </table>
-              <br>
-              <div class="center"><h3>Personnel</h3></div>
-              <br>
-              <br>
-              <table class="table table-borderless">
-                <tbody>
-                 <!-- Place people information here -->
-                  
-                    <tr>
-                   
-                  <tr>
-                    <td><img src="images/people/ida-chen-phd.jpg" alt="Ida Chen, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://harborpeds.org/academics/faculty/ida-chen-phd">Ida Chen, PhD</a></td><td>Faculty, Lunquist Research Institute</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Osode Coki, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td><a href="https://directory.columbia.edu/people/uni;jsessionid=A53D0BEE8932677D3AF92239EA8AE008?code=oc49">Osode Coki, RN</a></td>
-                    <td>Staff, Columbia University</td>
-                  </tr>
-			<tr>
-                    <td><img src="images/people/dilshad.jpg" alt="Dilshad Contractor ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Dilshad Contractor</td>
-                    <td>Clinical Research Coordinator, CHLA</td>
-                  </tr>
-		  <tr>
-                    <td><img src="images/people/aaron_coyner.png" alt="Aaron Coyner, ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Aaron Coyner</td>
-                    <td>PhD Student, Oregon Health &amp; Science University</td>
-                  </tr>
-                  
-                  <tr>
-                    <td><img src="images/people/sharon galvis.PNG" alt="Sharon Galvis, NNP ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Sharon Galvis, NNP</td>
-                    <td>Staff, Cedars-Sinai Medical Center</td
-	          </tr>
-	          
-                 
-                  <tr>
-                    <td><img src="images/people/Sang Jin Kim.jpg" alt="Sang Jin Kim, MD, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td>Sang Jin Kim, MD, PhD</td>
-                    <td>Visiting Researcher, Oregon Health &amp; Science University</td>
-                  </tr>
-                  
-               
-                 
-                  <tr>
-                    <td><img src="images/people/li-xiaohui.jpg" alt="Xiaohui Li, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://harborpeds.org/academics/faculty/xiaohui-li-md-msc">Xiaohui Li, PhD</a></td>
-                    <td>Faculty, Lundquist Research Institute</td>
-                  </tr>
-                  
-                 
-                  <tr>
-                    <td><img src="images/people/Kaye Roll.PNG" alt="Kaye Roll, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Kaye Roll, RN</td>
-                    <td>Staff, Lundquist Research Institute</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/leora sarna.jpg" alt="Leora Pinto, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td><a href="https://directory.columbia.edu/people/uni?code=lls2163">Leora Pinto, RN</a></td>
-                    <td>Staff, Columbia University</td>
-                  </tr>
-			     <tr>
-                    <td><img src="images/people/schelonka.jpg" alt="Robert Schelonka, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="https://www.ohsu.edu/people/robert-l-schelonka-md">Robert Schelonka, MD</a></td><td>Faculty, Oregon Health & Science University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Kemal Sonmez.jpg" alt="Kemal Sonmez, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/csee/csee-people/sonmez.cfm">Kemal Sonmez, PhD</a></td>
-                    <td>Faculty, Oregon Health &amp; Science University</td>
-                  </tr>
-                 
-                  <tr>
-                    <td><img src="images/people/kent-taylor-phd.jpg" alt="Kent Taylor, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://harborpeds.org/academics/faculty/kent-taylor-phd">Kent Taylor, PhD</a></td>
-                    <td>Faculty, Lundquist Research Institute</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/peng.png" alt="Peng Tian, BS ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Peng Tian, BS</td>
-                    <td>Student, Northeastern University</td>
-                  </tr>
-			    <tr>
-                    <td><img src="images/people/ilkay-yildiz.jpg" alt="Ilkay Yildiz PhD student, ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td>Ilkay Yildiz, PhD student</td>
-                    <td>Faculty, Northeastern University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/veysi.png" alt="Veysi Yildiz ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Veysi Yildiz</td>
-                    <td>Student, Northeastern University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Mary Zajechowski, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Mary Zajechowski, RN</td>
-                    <td>Staff, William Beaumont Hospital</td>
-                  </tr>
-                </tbody>
-              </table>
-              <br>
-              <div class="center"><h3>Past Personnel</h3></div>
-              <br>
-              <br>
-              <table class="table table-borderless">
-                <tbody>
-	           <td><img src="images/people/andrew beers.jpg" alt="Andrew Beers, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-			<td><a href="https://www.nmr.mgh.harvard.edu/user/3918556">Andrew Beers, PhD</a></td>
-                    <td>Research Staff, Massachusetts General Hospital</td>
-			
-                  </tr>
-			
-			<tr>
-                    <td><img src="images/james.png" alt="James Brown, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-			<td><a href="https://www.nmr.mgh.harvard.edu/user/4101436">James Brown, PhD</a></td>
-                    <td>Research Fellow, Massachusetts General Hospital</td>
-                  </tr>
-                  
-		  <tr>
-                    <td><img src="images/people/ken chang.jpg" alt="Ken Chang ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="https://www.nmr.mgh.harvard.edu/user/3589141">Ken Chang</a></td><td>Graduate Student, Massachusetts General Hospital</td>
-                  </tr>
-		  <tr>
-                    <td><img src="images/people/Hilal Biten.png" alt="Hilal Biten, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td>Hilal Biten, MD</td>
-                    <td>Visiting Ophthalmologist, Turkey</td>
-                  </tr>	
-                  <tr>
-                    <td><img src="images/people/amparo alonso-bentanzos.PNG" alt="Amparo Alonso-Betanzos, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Amparo Alonso-Betanzos, PhD</td>
-                    <td>Visiting Scholar, Universidade da Coruna, Spain</td>
-                  </tr>
-		<tr>
-                    <td><img src="images/people/Carlos Dulanto Reinos.PNG" alt="Carlos M. Dulanto-Reinoso, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Carlos M. Dulanto-Reinoso, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-		<tr>
-                    <td><img src="images/people/Yuan Guo.PNG" alt="Yuan Guo PhD student, ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td>Yuan Guo, PhD student</td>
-                    <td>Faculty, Northeastern University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/andrea arriola.PNG" alt="Andrea Arriola, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Andrea Arriola, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/esra cansızoğlu.jpg" alt="Esra Ataer-Cansizoglu, MS ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.northeastern.edu/csl/?page_id=465&wpapl_id=13">Esra Ataer-Cansizoglu, MS</a></td>
-                    <td>PhD Student, Northeastern University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/vero.PNG" alt="Veronica Bolon-Canedo ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Veronica Bolon-Canedo</td>
-                    <td>Visiting Student, Universidade da Coruna, Spain</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Tammy Check, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Tammy Check, RN</td>
-                    <td>Staff, William Beaumont Hospital</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/bekir dizdaroglu.jpg" alt="Bekir Dizdaroglu ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Bekir Dizdaroglu</td>
-                    <td>Visiting Scholar, Northeastern University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Cheryl-Ann Eccles, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Cheryl-Ann Eccles, RN</td>
-                    <td>Staff, Columbia University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/oscar.jpg" alt="Oscar Fontenla-Romero, PhD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Oscar Fontenla-Romero, PhD</td>
-                    <td>Visiting Scholar, Universidade da Coruna, Spain</td>
-                  </tr>
-		 <tr>
-                    <td><img src="images/people/mira.PNG" alt="Miroslava Meraz-Gutierrez, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Miroslava Meraz-Gutierrez, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-		   <tr>
-                    <td><img src="images/people/Kai_Kang.jpg" alt="Kai Kang, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://chicago.medicine.uic.edu/cms/One.aspx?pageId=21406616">Kai Kang, MD</a></td>
-                    <td>Resident, University of Illinois at Chicago</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Chace Moleta.jpg" alt="Chace Moleta, MS ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td>Chace Moleta, MS</td>
-                    <td>Medical Student, Oregon Health &amp; Science University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/cristina.PNG" alt="Cristina Montero-Mendoza, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Cristina Montero-Mendoza, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Murthy-Raghu.jpg" alt="Raghu Murthy, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.retinaeye.com/">Raghu Murthy, MD</a></td>
-                    <td>Faculty Collaborator, Cedars-Sinai Medical Center</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/cathy negron.PNG" alt="Catherin Negron, BA ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Catherin Negron, BA</td>
-                    <td>Staff, University of Miami</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Francisco.PNG" alt="Francisco Olguin-Manriquez, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Francisco Olguin-Manriquez, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/mrinali gupta.jpg" alt="Mrinali Gupta, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Mrinali Gupta, MD</td>
-                    <td>Faculty, Weill Cornell Medical College</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Nina Hewing, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Nina Hewing, MD</td>
-                    <td>Postdoc, Columbia University and Weill Cornell Medical College</td>
-                  </tr>
-		  <tr>
-                    <td><img src="images/karyn.png" alt="Karyn Jonas, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td><a href="https://directory.weill.cornell.edu/person/profile/kam9071">Karyn Jonas, RN</a></td>
-                    <td>Staff, University of Illinois at Chicago</td>
-                  </tr>	
-		   <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Katie Keck ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Katie Keck</td>
-                    <td>Medical Student, Oregon Health &amp; Science University</td>
-                  </tr>
-		   <tr>
-                    <td><img src="images/people/dharnish.jpg" alt="Dharanish Kedarisetti, MSc ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Dharanish Kedarisetti, MSc</td>
-                    <td>PhD Student, Northeastern University</td>
-                  </tr>	
-                  
-                  <tr>
-                    <td><img src="images/people/michael klufus.webp" alt="Michael Klufas, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Michael Klufas, MD</td>
-                    <td>Fellow, Weill Cornell Medical College</td>
-                  <tr>
-                  <tr>
-                    <td><img src="images/people/evan kroeger.jpg" alt="Evan Krueger ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Evan Krueger</td>
-                    <td>Staff, Children's Hospital Los Angeles</td>
-                  </tr>
-		  <tr>
-                    <td><img src="images/people/katie mcgovern.PNG" alt="Kaythyn McGoven, MPH ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Kaythyn McGoven, MPH</td>
-                    <td>Staff, Children's Hospital Los Angeles</td>
-                  </tr> 	
-                  <tr>
-                    <td><img src="images/people/Anton Orlin, MD.jpg" alt="Anton Orlin, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="https://weillcornell.org/aorlin">Anton Orlin, MD</a></td>
-                    <td>Faculty, Weill Cornell Medical College</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/aqua-retina2.png" alt="Tammy Osentoski, RN ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Tammy Osentoski, RN</td>
-                    <td>Staff, William Beaumont Hospital</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/samir patel.jpg" alt="Samir Patel ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://weill.cornell.edu/ctsc/training_and_education/past_summer_fellows.html">Samir     Patel</a></td>
-                    <td>Medical Student, Weill Cornell Medical College</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/alex port.jpg" alt="Alexander Port ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Alexander Port</td>
-                    <td>Medical Student, Weill Cornell Medical College</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/rohini rao.jpg" alt="Rohini Rao ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Rohini Rao</td>
-                    <td>Medical Student, Columbia University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/rafael romero.PNG" alt="Rafael Romero, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Rafael Romero, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/ryanm.jpg" alt="Michael Ryan ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Michael Ryan</td>
-                    <td>Medical Student, Oregon Health &amp; Science University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/sammy.jpg" alt="Samantha Salinas-Longoria, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Samantha Salinas-Longoria, MD</td>
-                    <td>Fellow, Asociacion para Evitarla Ceguera, Mexico City</td>
-                  </tr>
-		 <tr>
-                    <td><img src="images/ryan.png" alt="Ryan Swan, ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-peoplethumb"></td>
-                    <td>Ryan Swan</td>
-                    <td>PhD Student, Oregon Health &amp; Science University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/steven williams.jpg" alt="Steven Williams, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.floridaeyeclinic.com/our-doctors/steven-williams-m-d">Steven Williams, MD</a></td>
-                    <td>Medical Student, Columbia University</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/people/Ryan k Wong.jpg" alt="Ryan Wong, MD ophthalmology and imaging & informatics in ROP research (i-ROP)" class="img-thumbnail"></td>
-                    <td><a href="http://www.retinacenterspc.com/about/ryan-wong.cfm">Ryan Wong, MD</a></td>
-                    <td>Medical Student, Weill Cornell Medical College</td>
-                  </tr>
-               </tbody>
-              </table>
+<div class="section">
+<div class="container">
+<!-- To add a person: copy one <li class="person"> block inside the right group, change the name, role and
+   organisation, and put the photo in images/people/ (a JPEG about 300 pixels wide is plenty; leave alt="" because the
+   name is already next to it). No photo? Use images/people/placeholder.png. The lists are roughly alphabetical by last
+   name, so follow that if you can. To drop a link, delete the <a> tag and keep the name. -->
+<section class="people-group" id="coordinating-center" aria-labelledby="coordinating-center-title">
+<h2 id="coordinating-center-title">Coordinating Center</h2>
+<ul class="people">
+<li class="person">
+<img class="avatar" src="images/people/peter-campbell.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.ohsu.edu/people/jpeter-campbell-md-mph">J. Peter Campbell, MD, MPH</a></h3>
+<p class="person-role">Study Principal Investigator</p>
+<p class="person-org">Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/susan-ostmo.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://docs.google.com/presentation/d/1Qx1eBVTfXqFVYR63Nq4o-TvNdk4XttpUXb2RmlGmBHA/edit#slide=id.p">Susan Ostmo, MS</a></h3>
+<p class="person-role">Research Administrator<br>ROP Program</p>
+<p class="person-org">Oregon Health &amp; Science University</p>
+<p class="person-mail"><a href="mailto:ostmo@ohsu.edu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>ostmo@ohsu.edu</a></p>
+</div>
+</li>
+</ul>
+</section>
+<section class="people-group" id="site-principal-investigators" aria-labelledby="site-principal-investigators-title">
+<h2 id="site-principal-investigators-title">Site Principal Investigators</h2>
+<ul class="people">
+<li class="person">
+<img class="avatar" src="images/people/audina-berrocal.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://umiamihospital.org/doctors/profile/1358">Audina Berrocal, MD</a></h3>
+<p class="person-org">Faculty, University of Miami</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/r-v-paul-chan.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">R.V. Paul Chan, MD, FACS<!-- link removed: it no longer works (2026-10-14): http://chicago.medicine.uic.edu/departments/academic-departments/opthalmology-visual-sciences/our-department/faculty/name/paul-chan/ --></h3>
+<p class="person-org">Faculty, University of Illinois at Chicago</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/michael-f-chiang.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.nei.nih.gov/about/nei-leadership/michael-f-chiang-md">Michael F. Chiang, MD</a></h3>
+<p class="person-org">Director, National Eye Institute</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/kimberly-drenser.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://arcpc.org/our-physicians/">Kimberly Drenser, MD, PhD</a></h3>
+<p class="person-org">Faculty, William Beaumont Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/deniz-erdogmus.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www1.ece.neu.edu/~erdogmus/">Deniz Erdogmus, PhD</a></h3>
+<p class="person-org">Faculty, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/me-hartnett.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://healthcare.utah.edu/fad/mddetail.php?physicianID=u0708256&amp;name=mary-elizabeth-hartnett">ME Hartnett, MD</a></h3>
+<p class="person-org">Faculty, University of Utah</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/jason-horowitz.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.columbiadoctors.org/prof/jdhorowitz">Jason Horowitz, MD</a></h3>
+<p class="person-org">Faculty, Columbia University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/jayashree-kalpathy-cramer.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.nmr.mgh.harvard.edu/user/8165">Jayashree Kalpathy-Cramer, PhD</a></h3>
+<p class="person-org">Faculty, Massachusetts General Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/thomas-lee.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.chla.org/profile/thomas-c-lee-md">Thomas Lee, MD</a></h3>
+<p class="person-org">Faculty, Children&#x27;s Hospital Los Angeles</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/maria-ana-martinez-castellanos.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.asrs.org/find-a-specialist/profile/5004/Maria-A-Martinez-Castellanos">Maria Ana Martinez-Castellanos, MD</a></h3>
+<p class="person-org">Faculty, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/darius-moshfeghi-photo.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://profiles.stanford.edu/darius-moshfeghi">Darius Moshfeghi, MD</a></h3>
+<p class="person-org">Faculty, Stanford University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/aaron-nagiel.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.chla.org/profile/aaron-nagiel-md-phd">Aaron Nagiel, MD</a></h3>
+<p class="person-org">Faculty, University of Southern California</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/leah-owen.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://healthcare.utah.edu/fad/mddetail.php?physicianID=u0154853&amp;name=leah-a-owen">Leah Owen, MD</a></h3>
+<p class="person-org">Faculty, University of Utah</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/jerome-rotter.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://lundquist.org/profile/jerome-i-rotter-md/">Jerome Rotter, MD</a></h3>
+<p class="person-org">Faculty, Lundquist Research Institute</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/charles-simmons.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Charles Simmons, MD<!-- link removed: it no longer works (2026-10-14): http://bio.csmc.edu/view/5905/Charles-F-Simmons.aspx --></h3>
+<p class="person-org">Faculty, Cedars-Sinai Medical Center</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/stratis-ioannidis.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Stratis Ioannidis, PhD<!-- link removed: it no longer works (2026-10-14): http://www.ece.neu.edu/people/ioannidis-stratis --></h3>
+<p class="person-org">Faculty, Northeastern University</p>
+</div>
+</li>
+</ul>
+</section>
+<section class="people-group" id="personnel" aria-labelledby="personnel-title">
+<h2 id="personnel-title">Personnel</h2>
+<ul class="people">
+<li class="person">
+<img class="avatar" src="images/people/ida-chen.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Ida Chen, PhD<!-- link removed: it no longer works (2026-10-14): http://harborpeds.org/academics/faculty/ida-chen-phd --></h3>
+<p class="person-org">Faculty, Lundquist Research Institute</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://directory.columbia.edu/people/uni;jsessionid=A53D0BEE8932677D3AF92239EA8AE008?code=oc49">Osode Coki, RN</a></h3>
+<p class="person-org">Staff, Columbia University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/dilshad-contractor.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Dilshad Contractor</h3>
+<p class="person-org">Clinical Research Coordinator, CHLA</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/aaron-coyner.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Aaron Coyner</h3>
+<p class="person-org">PhD Student, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/sharon-galvis.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Sharon Galvis, NNP</h3>
+<p class="person-org">Staff, Cedars-Sinai Medical Center</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/sang-jin-kim.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Sang Jin Kim, MD, PhD</h3>
+<p class="person-org">Visiting Researcher, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/xiaohui-li.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Xiaohui Li, PhD<!-- link removed: it no longer works (2026-10-14): http://harborpeds.org/academics/faculty/xiaohui-li-md-msc --></h3>
+<p class="person-org">Faculty, Lundquist Research Institute</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/kaye-roll.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Kaye Roll, RN</h3>
+<p class="person-org">Staff, Lundquist Research Institute</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/leora-pinto.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://directory.columbia.edu/people/uni?code=lls2163">Leora Pinto, RN</a></h3>
+<p class="person-org">Staff, Columbia University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/robert-schelonka.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.ohsu.edu/people/robert-l-schelonka-md">Robert Schelonka, MD</a></h3>
+<p class="person-org">Faculty, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/kemal-sonmez.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/csee/csee-people/sonmez.cfm">Kemal Sonmez, PhD</a></h3>
+<p class="person-org">Faculty, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/kent-taylor.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Kent Taylor, PhD<!-- link removed: it no longer works (2026-10-14): http://harborpeds.org/academics/faculty/kent-taylor-phd --></h3>
+<p class="person-org">Faculty, Lundquist Research Institute</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/peng-tian.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Peng Tian, BS</h3>
+<p class="person-org">Student, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/ilkay-yildiz.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Ilkay Yildiz, PhD student</h3>
+<p class="person-org">Faculty, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/veysi-yildiz.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Veysi Yildiz</h3>
+<p class="person-org">Student, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Mary Zajechowski, RN</h3>
+<p class="person-org">Staff, William Beaumont Hospital</p>
+</div>
+</li>
+</ul>
+</section>
+<section class="people-group" id="past-personnel" aria-labelledby="past-personnel-title">
+<h2 id="past-personnel-title">Past Personnel</h2>
+<ul class="people people--compact">
+<li class="person">
+<img class="avatar" src="images/people/andrew-beers.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.nmr.mgh.harvard.edu/user/3918556">Andrew Beers, PhD</a></h3>
+<p class="person-org">Research Staff, Massachusetts General Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/james-brown.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.nmr.mgh.harvard.edu/user/4101436">James Brown, PhD</a></h3>
+<p class="person-org">Research Fellow, Massachusetts General Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/ken-chang.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.nmr.mgh.harvard.edu/user/3589141">Ken Chang</a></h3>
+<p class="person-org">Graduate Student, Massachusetts General Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/hilal-biten.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Hilal Biten, MD</h3>
+<p class="person-org">Visiting Ophthalmologist, Turkey</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/amparo-alonso-betanzos.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Amparo Alonso-Betanzos, PhD</h3>
+<p class="person-org">Visiting Scholar, Universidade da Coruna, Spain</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/carlos-m-dulanto-reinoso.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Carlos M. Dulanto-Reinoso, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/yuan-guo.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Yuan Guo, PhD student</h3>
+<p class="person-org">Faculty, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/andrea-arriola.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Andrea Arriola, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/esra-ataer-cansizoglu.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Esra Ataer-Cansizoglu, MS<!-- link removed: it no longer works (2026-10-14): http://www.northeastern.edu/csl/?page_id=465&wpapl_id=13 --></h3>
+<p class="person-org">PhD Student, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/veronica-bolon-canedo.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Veronica Bolon-Canedo</h3>
+<p class="person-org">Visiting Student, Universidade da Coruna, Spain</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Tammy Check, RN</h3>
+<p class="person-org">Staff, William Beaumont Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/bekir-dizdaroglu.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Bekir Dizdaroglu</h3>
+<p class="person-org">Visiting Scholar, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Cheryl-Ann Eccles, RN</h3>
+<p class="person-org">Staff, Columbia University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/oscar-fontenla-romero.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Oscar Fontenla-Romero, PhD</h3>
+<p class="person-org">Visiting Scholar, Universidade da Coruna, Spain</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/miroslava-meraz-gutierrez.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Miroslava Meraz-Gutierrez, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/kai-kang.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://chicago.medicine.uic.edu/cms/One.aspx?pageId=21406616">Kai Kang, MD</a></h3>
+<p class="person-org">Resident, University of Illinois at Chicago</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/chace-moleta.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Chace Moleta, MS</h3>
+<p class="person-org">Medical Student, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/cristina-montero-mendoza.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Cristina Montero-Mendoza, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/raghu-murthy.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://www.retinaeye.com/">Raghu Murthy, MD</a></h3>
+<p class="person-org">Faculty Collaborator, Cedars-Sinai Medical Center</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/catherin-negron.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Catherin Negron, BA</h3>
+<p class="person-org">Staff, University of Miami</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/francisco-olguin-manriquez.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Francisco Olguin-Manriquez, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/mrinali-gupta.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Mrinali Gupta, MD</h3>
+<p class="person-org">Faculty, Weill Cornell Medical College</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Nina Hewing, MD</h3>
+<p class="person-org">Postdoc, Columbia University and Weill Cornell Medical College</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/karyn-jonas.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://directory.weill.cornell.edu/person/profile/kam9071">Karyn Jonas, RN</a></h3>
+<p class="person-org">Staff, University of Illinois at Chicago</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Katie Keck</h3>
+<p class="person-org">Medical Student, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/dharanish-kedarisetti.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Dharanish Kedarisetti, MSc</h3>
+<p class="person-org">PhD Student, Northeastern University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/michael-klufas.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Michael Klufas, MD</h3>
+<p class="person-org">Fellow, Weill Cornell Medical College</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/evan-krueger.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Evan Krueger</h3>
+<p class="person-org">Staff, Children&#x27;s Hospital Los Angeles</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/kaythyn-mcgoven.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Kaythyn McGoven, MPH</h3>
+<p class="person-org">Staff, Children&#x27;s Hospital Los Angeles</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/anton-orlin.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name"><a href="https://weillcornell.org/aorlin">Anton Orlin, MD</a></h3>
+<p class="person-org">Faculty, Weill Cornell Medical College</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/placeholder.png" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Tammy Osentoski, RN</h3>
+<p class="person-org">Staff, William Beaumont Hospital</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/samir-patel.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Samir Patel<!-- link removed: it no longer works (2026-10-14): http://weill.cornell.edu/ctsc/training_and_education/past_summer_fellows.html --></h3>
+<p class="person-org">Medical Student, Weill Cornell Medical College</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/alexander-port.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Alexander Port</h3>
+<p class="person-org">Medical Student, Weill Cornell Medical College</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/rohini-rao.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Rohini Rao</h3>
+<p class="person-org">Medical Student, Columbia University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/rafael-romero.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Rafael Romero, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/michael-ryan.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Michael Ryan</h3>
+<p class="person-org">Medical Student, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/samantha-salinas-longoria.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Samantha Salinas-Longoria, MD</h3>
+<p class="person-org">Fellow, Asociacion para Evitar la Ceguera, Mexico City</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/ryan-swan.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Ryan Swan</h3>
+<p class="person-org">PhD Student, Oregon Health &amp; Science University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/steven-williams.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Steven Williams, MD<!-- link removed: it no longer works (2026-10-14): http://www.floridaeyeclinic.com/our-doctors/steven-williams-m-d --></h3>
+<p class="person-org">Medical Student, Columbia University</p>
+</div>
+</li>
+<li class="person">
+<img class="avatar" src="images/people/ryan-wong.jpg" alt="" width="80" height="80" loading="lazy">
+<div class="person-body">
+<h3 class="person-name">Ryan Wong, MD<!-- link removed: it no longer works (2026-10-14): http://www.retinacenterspc.com/about/ryan-wong.cfm --></h3>
+<p class="person-org">Medical Student, Weill Cornell Medical College</p>
+</div>
+</li>
+</ul>
+</section>
+</div>
+</div>
+</main>
+<!-- chrome:footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img class="footer-logo" src="images/brand/irop-logo.jpg" width="240" height="56" loading="lazy" alt="i-ROP: Imaging and Informatics in Retinopathy of Prematurity">
+                <p>The i-ROP consortium is led by Oregon Health &amp; Science University (OHSU) and has been funded by the National Institutes of Health since 2010.</p>
             </div>
-          </div>
+            <nav aria-label="Resources">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="cliniciansExamples.html">Clinician examples</a></li>
+                    <li><a href="cliniciansSeverityScale.html">Severity scale</a></li>
+                    <li><a href="risk-calculator/">Risk calculator</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Consortium">
+                <h2>Consortium</h2>
+                <ul>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </div>
-    <div class="push"></div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; text &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-          </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 i-ROP</p>
+            <p><a href="#">Back to top</a></p>
         </div>
-      </div>
     </div>
-  </body>
-
-    <!--End body-->
-
-    <!-- Bootstrap Core JavaScript
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.min.js"></script> -->
-
-    <!-- jQuery -->
-    <script src="js/jquery-1.12.2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- Scripts -->
-
-    <script>
-    $(document).ready(function () {
-        var url = window.location;
-        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
-        $('ul.nav a').filter(function() {
-             return this.href == url;
-        }).parent().addClass('active');
-    })
-    </script>
-
+</footer>
+<script src="js/site.js" defer></script>
+<!-- /chrome:footer -->
+</body>
 </html>
